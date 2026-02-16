@@ -1,12 +1,23 @@
 
 import './App.css'
-import Home from './components/Home'
+import AIGuess from './components/AIGuess';
+//import Home from './components/Home'
+import {
+  BrowserRouter as Router,
+  
+  Route,
+  Routes
+} from "react-router-dom";
 
 function App() {
 
   return (
     <>
-     <Home/>
+    <Router>
+      <Routes>
+        <Route path="/AIGuess" element={<AIGuess/>} />
+      </Routes>
+    </Router>
     </>
   )
 }

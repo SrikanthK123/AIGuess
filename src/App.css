@@ -1,0 +1,67 @@
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none;     /* Hide scrollbar for Firefox */
+  }
+  .wrapper {
+    position: relative; /* Position context for the tail */
+  }
+  
+  .comic-bubble {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the bubble is positioned relative to its container */
+    background-color: #247291;
+    color: #f8da5b;
+    padding: 20px;
+    max-width: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-height: 150px;
+    overflow-y: auto; /* Allow scrolling */
+   /* margin-bottom: 80px; /* Create space for the tail */
+    font-size: 14px;
+  }
+  
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  .comic-bubble::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .comic-bubble {
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }
+  
+  /* Optional: To ensure smooth scrolling */
+  .comic-bubble {
+    -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+  }
+  
+ /* .comic-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 70% ; /* Adjust based on scrollbar width 
+    left: -12px; /* Adjust tail position horizontally 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-bottom: 10px solid #fff; 
+    overflow-y: auto;
+    max-height: 150px;
+    background-color: green;
+   
+  }*/
+  
+  /* Make sure to handle the tail visibility */
+ /* .comic-bubble:hover::after {
+    bottom: calc(100% + 5px); /* Adjust when hovered, if necessary 
+  }*/
+
+ 
